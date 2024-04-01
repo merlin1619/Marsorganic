@@ -1,0 +1,457 @@
+<!-- <section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-bold">E-Commerce (B2B) Application in Angular 17</h1>
+      <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <a class="btn btn-primary my-2" routerLink="/seller/product">Product Section</a> &nbsp; &nbsp;
+        <a class="btn btn-secondary my-2" routerLink="/sign-up">Register</a>
+      </p>
+    </div>
+  </div>
+</section> -->
+<div class="container">
+  <div class="row">
+    <!-- Carousel -->
+    <div class="col-md-6">
+      <carousel class="carousel">
+          
+          <slide>
+              <img src="https://images.pexels.com/photos/7262688/pexels-photo-7262688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="second slide" style="display: block; width: 100%;">
+            </slide>
+          <slide>
+              <img src="../../assets/images/scrub 1.jpeg" alt="first slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img src="https://images.pexels.com/photos/672051/pexels-photo-672051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="first slide" style="display: block; width: 100%;">
+           
+            </slide>
+
+          
+          <slide>
+            <img src="https://th.bing.com/th/id/R.d737a84744e6daa919ed99f79dd57e0a?rik=z9gtWcu0%2fq09NQ&riu=http%3a%2f%2fyesofcorsa.com%2fwp-content%2fuploads%2f2018%2f09%2fOrganic-Food-Desktop-Wallpaper-Free.jpg&ehk=z1CIBpR%2f36Wu2YzjdNTo2rfN3OdjonPjCx8qKeMhX9g%3d&risl=&pid=ImgRaw&r=0" alt="third slide" style="display: block; width: 100%;">
+          </slide>
+          <slide>
+              <img src="https://images.pexels.com/photos/11616424/pexels-photo-11616424.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="forth slide" style="display: block; width: 100%; height: 100%">
+            </slide>
+            <slide>
+              <img src="https://n.sinaimg.cn/sinakd20201228s/298/w700h398/20201228/d8f8-kfxsuvw4930485.jpg" alt="forth slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img src="https://nefertiti-eg.com/wp-content/uploads/2019/01/why-choose-Natural-cosmetics.jpg" alt="forth slide" style="display: block; width: 100%;">
+            </slide>
+        </carousel>
+    </div>
+    <!-- Image with description and buy now button -->
+    <div class="col-md-6">
+      <div class="imgl">
+      <img src="https://th.bing.com/th/id/R.7a119de14a2ed4fc42f924d41105a4ea?rik=Fbkvnt5K0RbO5w&riu=http%3a%2f%2fwww.heritagehealthfood.com%2fnewsite%2fwp-content%2fuploads%2f2014%2f06%2forganics.png&ehk=RfPBBW9FPGnhNI%2fJYkvcTBHJK1ZYpniah4LkKpH9PIw%3d&risl=&pid=ImgRaw&r=0" style="max-width: 100%;" alt="Image"></div>
+      <div class="description">
+        <h3></h3>
+        <h1>Best Quality Products</h1>
+        <h3>JOIN THE ORGANIC MOVEMENT!
+          
+        </h3>
+        <p>Organic food products are grown under a system of agriculture without the use of
+           harmful chemical fertilizers and
+           pesticides with an environmentally and socially responsible approach.</p>
+           <br>
+           <li class="nav-item" *ngIf="user_role =='buyer'">
+        <button  class="btn btn-success"  routerLink="/buyer-dashboard">
+         <i class="fa fa-shopping-cart  fa-2x" aria-hidden="true"></i>&nbsp;Buy Now</button></li>
+      </div>
+    </div>
+  </div>
+</div>
+<h3></h3>
+<br><br>
+<br><br>
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="https://2.bp.blogspot.com/-8ZjFbVzKgDQ/UQfPGSDGO0I/AAAAAAAAAaM/V43Jidp2Nno/s1600/free-shipping.jpg" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.logolynx.com/images/logolynx/17/179c0d0790d77b447caf9c91eb7de6f2.jpeg" height="100" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.pngmart.com/files/7/Discount-PNG-Image.png" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://defensehelp.com/wp-content/uploads/2018/05/5-Star-Image-2-istock.jpg" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://104si73.s3.us-west-1.amazonaws.com/wp-content/uploads/woo5tor3/2023/07/21235518/easy-returns.png" height="100" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://2.bp.blogspot.com/-8ZjFbVzKgDQ/UQfPGSDGO0I/AAAAAAAAAaM/V43Jidp2Nno/s1600/free-shipping.jpg" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.logolynx.com/images/logolynx/17/179c0d0790d77b447caf9c91eb7de6f2.jpeg" height="100" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.pngmart.com/files/7/Discount-PNG-Image.png" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://defensehelp.com/wp-content/uploads/2018/05/5-Star-Image-2-istock.jpg" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://104si73.s3.us-west-1.amazonaws.com/wp-content/uploads/woo5tor3/2023/07/21235518/easy-returns.png" height="100" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://2.bp.blogspot.com/-8ZjFbVzKgDQ/UQfPGSDGO0I/AAAAAAAAAaM/V43Jidp2Nno/s1600/free-shipping.jpg" height="100" width="250" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.logolynx.com/images/logolynx/17/179c0d0790d77b447caf9c91eb7de6f2.jpeg" height="100" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://www.pngmart.com/files/7/Discount-PNG-Image.png" height="80" width="150" alt="" />
+    </div>
+    <div class="slide">
+      <img src="https://defensehelp.com/wp-content/uploads/2018/05/5-Star-Image-2-istock.jpg" height="100" width="250" alt="" />
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container text-center">
+  <h1 class="text-bold text-align-center">BEST SELLING</h1>
+    
+  </div>
+  
+  
+  <div class="shell">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img">
+              <img src="../../assets/images/cow1.png" alt="Product" class="img-responsive" />
+            </div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Dairy Products</span>
+              </div>
+              <div class="title-product">
+                <h3>Mackie's</h3>
+              </div>
+              <div class="description-prod">
+                <p>Real Dairy Ice Cream</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">Rs 150</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="../../assets/images/mme6.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Daily Essentials</span>
+              </div>
+              <div class="title-product">
+                <h3>Mama Earth</h3>
+              </div>
+              <div class="description-prod">
+                <p>Vitamin-C Underarm Cream</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">Rs 480</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="../../assets/images/spice 1.avif" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Spices</span>
+              </div>
+              <div class="title-product">
+                <h3>Health Fields</h3>
+              </div>
+              <div class="description-prod">
+                <p>Organic Cinnamon Spices</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">Rs 300</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="../../assets/images/oraganic kid 5.webp" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Kids Food</span>
+              </div>
+              <div class="title-product">
+                <h3>Conscious food</h3>
+              </div>
+              <div class="description-prod">
+                <p>Multigrain Dosa with Oats and brown rice</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">Rs 350</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="containerd">
+    <h1 >OUR PRODUCTS</h1>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <h3 class="card-title">Cow Milk</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://horizon.com/wp-content/uploads/fat-free-milk-01.png" alt="Card image cap">
+            <p>Cow milk, a nutrient-rich liquid from female cows, boasts high protein, calcium, vitamins </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Organic Cheese</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://nancysyogurt.com/wp-content/uploads/2017/08/Organic-Cottage-Cheese-Lowfat-1.png" alt="Card image cap">
+            <p>Organic milk cheese, crafted from premium organic cow milk, embodies purity</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Dairy icecream</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://www.prairiefarms.com/wp-content/uploads/2023/06/072730720015-1024x1024.png" alt="Card image cap">
+            <p>Dairy ice cream, a beloved frozen dessert, is crafted from wholesome dairy ingredients</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Aqua Glow
+          </h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-master-catalog/default/dw4d79d7f7/images/120545540/120545540_MCM_PACK_137365.png?sw=1024" alt="Card image cap">
+            <p>Aqua Glow typically refers to a skincare product or makeup line designed to enhance the skin's hydration</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Lipstick</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://images-static.nykaa.com/media/catalog/product/1/e/1e95f2e8906087777786%20(1).jpg" alt="Card image cap">
+            <p>Lipstick, a cosmetic staple, is a colored product applied to the lips to enhance their appearance.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Face Wash</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://gunacosmetics.com/gunacosmetics-files/2021/07/Mamaearth-4-1536x1536.jpg" alt="Card image cap">
+            <p>Face wash, a fundamental part of skincare routines, is a cleansing product.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Body Wash</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61A9JTb8UeL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg" alt="Card image cap">
+            <p>Body Wash is a skincare product formulated with natural plant extracts, botanical oils, and other herbal ingredients</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Herbal Soap</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/81FegJ7lisL._SX679_PIbundle-4,TopRight,0,0_AA679SH20_.jpg" alt="Card image cap">
+           
+            <p> Herbal soap is a natural cleansing product made primarily from botanical ingredients, plant extracts, and essential oils.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Herbal Serum</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61ey4InpC9L._SX679_.jpg" alt="Card image cap">
+            <p>Herbal serum is a skincare product formulated with natural plant extracts, botanical oils,</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Super Jaggery Powder</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://www.consciousfood.com/cdn/shop/files/JAGGERY_919ac53c-b9c2-4232-b420-be772d361c4b.png?v=1697268374&width=713" alt="Card image cap">
+            <p>Super jaggery is a healthier alternative to refined sugar, made from concentrated sugarcane juice with minimal processing.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Veggie Ragi Dosa</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://www.consciousfood.com/cdn/shop/files/SPROUTED-RAGI-POWDERfront_8__4_11zon_261d00bb-1963-44d9-9add-fe3c0409aa78.jpg?v=1697268386&width=713" alt="Card image cap">
+            <p>Multigrain dosa is a savory Indian pancake made from a batter of fermented grains like rice, urad dal</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Multigrain Dosa</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://www.consciousfood.com/cdn/shop/files/SPROUTED-RAGI-POWDERfront_4__8_11zon_1b89dfa4-90b3-48ef-a27a-1413e27e2752.jpg?v=1697268362&width=713" alt="Card image cap">
+            <p>Ragi powder is a nutritious flour made from finely ground finger millet grains, packed with fiber</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Organic Cinnamon</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61Yx8OZvbgL._SX679_.jpg" alt="Card image cap">
+            <p>Organic Cinnamon Bark, derived from the seeds of the Elettaria Cinnamon plant.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Organic Pepper</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61sMmLGUMbL._SX679_.jpg" alt="Card image cap">
+            <p>Organic black pepper, derived from the dried berries of the Piper nigrum plant</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">Organic clove</h3>
+          <div class="card-content">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61QHLWp68dL._SX679_.jpg" alt="Card image cap">
+            <p>Organic clove, derived from the flower buds of the clove tree</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </div><br>
+<div class="discount">
+  <h2>10% DISCOUNT OFFER</h2>
+  <li class="nav-item" *ngIf="user_role =='buyer'">
+    <button  class="btn btn-success"  routerLink="/buyer-dashboard">
+     <i class="fa fa-shopping-cart  fa-2x" aria-hidden="true"></i>&nbsp;Buy Now</button></li>
+</div>
+
+
+
+  <h1 >FEEDBACK</h1><br>
+  <div class="feedback-carousel">
+    <div class="slides">
+      <img class="imgr" src="https://tse1.mm.bing.net/th/id/OIP.a2mjlMQFoyAhNM7SmVO1WAHaIa?w=132&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Customer 1">
+      <p class="review">"Absolutely love this ice cream! It's so smooth and creamy, and the flavors are amazing. It's become a staple dessert in our household"</p>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9734;</span>
+      </div>
+    </div>
+    <div class="slides">
+      <img class="imgr" src="https://tse4.mm.bing.net/th/id/OIP.oiEebcd4d5s3NPOQDa5R8AHaHa?w=155&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Customer 2">
+      <p class="review">"I've been using this face wash for a few weeks now, and I'm impressed with the results. It effectively removes dirt and oil without drying out my skin. Highly recommend it"</p>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+    </div>
+    <div class="slides">
+      <img class="imgr" src="https://tse3.mm.bing.net/th/id/OIP.-YHFVejfkGWIvEzwBSGznAHaHa?w=197&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Customer 3">
+      <p class="review">"Absolutely love this spice blend! It adds an incredible aroma and flavor to my dishes. It's perfect for both savory and sweet recipes. Highly recommended"</p>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>
+    <div class="slides">
+      <img class="imgr" src="https://tse3.mm.bing.net/th/id/OIP.1fqoaYVYKJRzY9SkS6gaDwHaHa?pid=ImgDet&w=192&h=192&c=7&dpr=1.5" alt="Customer 4">
+      <p class="review">"This serum has worked wonders for my dry skin! It's lightweight, absorbs quickly, and provides long-lasting hydration. I've noticed a significant improvement in my skin texture since using it"</p>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+   

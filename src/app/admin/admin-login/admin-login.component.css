@@ -1,0 +1,33 @@
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1000;
+}
+.row{
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(to bottom, #543e3e00, transparent);
+    border: rgb(29, 191, 245) solid 5px;
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    left: 272px;
+    bottom: -69px;
+}

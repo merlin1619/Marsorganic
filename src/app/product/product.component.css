@@ -1,0 +1,9 @@
+.sim-pointer{
+  cursor: pointer;
+  color:blue ;
+  font-weight: bolder;
+}
+.btn{
+  margin-right: 20px;
+  border-radius: 31px;
+}

@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img
+      src="../../assets/images/logo.png"
+      height="100"
+      alt=""
+      loading="lazy"
+      style="margin-top: 0px;"
+    /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ENG</a></li>
+            <li><a class="dropdown-item" href="#">HIN</a></li>
+          </ul>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link active" class="text-dark" aria-current="page" href="#"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link active" class="text-dark" href="about"><i class="fa fa-info fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item" *ngIf="user_role =='buyer'">
+          <a class="nav-link active" class="text-dark" routerLink="/buyer-dashboard"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link active " class="text-dark" routerLink="/contact-us"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item" *ngIf="user_role =='buyer'">
+          <a class="nav-link" class="text-primary" routerLink="/checkout"><i class="fa fa-shopping-cart  fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <!-- <li class="nav-item" *ngIf="user_role =='admin'">
+          <a class="nav-link " routerLink="/buyer-dashboard">All Order</a>
+        </li> -->
+        <li class="nav-item" *ngIf="user_role =='seller'">
+          <a class="nav-link " routerLink="/seller/product">Product</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role =='seller'">
+          <a class="nav-link " routerLink="/seller-dashboard">Seller Dashboard</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role =='admin'">
+          <a class="nav-link " routerLink="/admin/product">All Product</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role =='admin'">
+          <a class="nav-link " routerLink="/admin/user">Users</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role =='admin'">
+          <a class="nav-link " routerLink="/admin-dashboard">Admin dashboard</a>
+        </li>
+     
+      </ul>
+      <form class="d-flex" role="search" (submit)="searchProducts()">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchTerm">
+        <button class="btn btn-outline-success" type="submit"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+      </form>&nbsp;&nbsp;&nbsp;
+      <ul class="navbar-nav ml-auto"  *ngIf="!logged_in">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/sign-in">My Account</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="/sign-up">Sign Up</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-login">Admin Login</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto" *ngIf="logged_in">
+        <li class="nav-item">
+            <a class="nav-link " class="text-secondary" routerLink="/my-profile"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+            <a class="nav-link " class="text-danger" (click)="logout()"><i class="fa fa-sign-out fa-3x" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+
+    </div>
+  </div>
+</nav>
